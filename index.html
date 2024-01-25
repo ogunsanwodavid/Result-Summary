@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----------Important meta tags----------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Frontend Mentor Challenge to build a result summary component">
+    <meta property="og:description" content="Junior Frontend Mentor Challenge to build a result summary component">
+    <meta name="author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:image" content="https://github.com/ogunsanwodavid/FYLO/assets/images/favicon-32x32.png">
+    <meta property="og:title" content="Result Summary Component">
+
+    <!-----------Title---------->
+    <title>Result Summary Component</title>
+
+    <!------------Favicon------------->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-------Linked stylesheets, fonts, icons and libraries------------>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!----------Fontawesome icons---------->
+
+    
+    <!--------Google Fonts----------->
+    
+
+    <!--Added Styles-->
+    <style>
+        @font-face {
+            font-family: 'Hanken Grotesk';
+            src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype'),
+            url('./assets/fonts/README.txt') format('woff')
+        }
+
+        button , a {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body class="relative bg-white md:w-[100vw] md:h-[100vh] md:flex md:items-center md:justify-center md:bg-pale-blue">
+
+    <!--General container of body elements-->
+    <div class="w-full font-hanken-grotesk md:flex md:w-[650px] md:h-[400px] md:bg-white md:rounded-[2rem]">
+        <!--Header-->
+        <header class="w-full flex flex-col items-center px-8 py-6 bg-gradient-to-b from-gradient-light-slate-blue to-gradient-light-royal-blue rounded-b-3xl md:rounded-[2rem] md:w-1/2">
+            <h1 class="text-light-lavender text-2xl font-[700] md:text-lg">Your Result</h1>
+
+            <!--Gradient circle-->
+            <div class="w-32 h-32 flex flex-col items-center justify-center rounded-full bg-gradient-to-b  from-gradient-circle-violet-blue to-gradient-circle-persian-blue mt-5 md:mt-3 md:h-36 md:w-36">
+                <h3 class="text-white text-6xl font-[800] md:text-5xl">76</h3>
+                <h4 class="text-pale-blue text-lg font-[700] md:text-base">of 100</h4>
+            </div>
+            <h4 class="text-white text-3xl font-[700] mt-5 md:text-xl md:mt-8">Great</h4>
+            <p class="max-w-[80%] text-light-lavender text-xl text-center mt-3 mb-5 md:text-base">You scored higher than 65% of the people who have taken these tests.</p>
+        </header>
+
+        <!--Summary-->
+        <section class="w-full flex flex-col bg-white px-8 py-5 md:w-1/2 md:py-3 md:rounded-r-[2rem]">
+            <h2 class="text-black text-2xl font-[700] md:text-lg">Summary</h2>
+
+            <!--Summary reports-->
+            <ul class="w-full flex flex-col">
+
+                <!--Reaction-->
+                <li class="w-full flex items-center justify-between p-4 rounded-lg mt-5 md:p-3 md:mt-3" style="background-color: hsla(0, 100%, 67%, 0.09);">
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/images/icon-reaction.svg" alt="" class="h-6 md:h-5">
+                        <h3 class="text-light-red text-xl font-[700] md:text-base">Reaction</h3>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-black text-lg font-[700] md:text-sm">80</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">/</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">100</div>
+                    </div>
+                </li>
+
+                <!--Memory-->
+                <li class="w-full flex items-center justify-between p-4 rounded-lg mt-5 md:p-3 md:mt-3" style="background-color: hsla(39, 100%, 56%, 0.09);">
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/images/icon-memory.svg" alt="" class="h-6 md:h-5">
+                        <h3 class="text-orangey-yellow text-xl font-[700] md:text-base">Memory</h3>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-black text-lg font-[700] md:text-sm">92</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">/</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">100</div>
+                    </div>
+                </li>
+
+                <!--Verbal-->
+                <li class="w-full flex items-center justify-between p-4 rounded-lg mt-5 md:p-3 md:mt-3" style="background-color: hsla(166, 100%, 37%, 0.09);">
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/images/icon-verbal.svg" alt="" class="h-6 md:h-5">
+                        <h3 class="text-green-teal text-xl font-[700] md:text-base">Verbal</h3>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-black text-lg font-[700] md:text-sm">61</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">/</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">100</div>
+                    </div>
+                </li>
+
+                <!--Visual-->
+                <li class="w-full flex items-center justify-between p-4 rounded-lg mt-5 md:p-3 md:mt-3" style="background-color: hsla(234, 85%, 45%, 0.09);">
+                    <div class="flex items-center space-x-3">
+                        <img src="./assets/images/icon-visual.svg" alt="" class="h-6 md:h-5">
+                        <h3 class="text-cobalt-blue text-xl font-[700] md:text-base">Visual</h3>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <div class="text-black text-lg font-[700] md:text-sm">72</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">/</div>
+                        <div class="text-gray-400 text-lg font-[700] md:text-sm">100</div>
+                    </div>
+                </li>
+            </ul>
+
+            <!--Continue Button-->
+            <button class="w-full bg-dark-gray-blue text-white text-xl p-5 font-[700] rounded-full mt-8 mb-10 hover:bg-cobalt-blue md:p-3 md:text-base md:mt-6 md:mb-0">Continue</button>
+        </section>
+
+    </div>
+</body>
